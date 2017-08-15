@@ -100,9 +100,8 @@ Assets.car
 
 
 
-##资源优化
-1、使用Imageoptim压缩图片
-使用Imageoptim需要在">
+资源优化1、使用Imageoptim压缩图片
+使用Imageoptim需要在xcd">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS App Thinning 实践">
 <meta property="og:url" content="https://flyingnoob.github.io/2017/08/14/iOS App Thinning 实践/index.html">
@@ -120,12 +119,11 @@ Assets.car
 
 
 
-##资源优化
-1、使用Imageoptim压缩图片
-使用Imageoptim需要在">
+资源优化1、使用Imageoptim压缩图片
+使用Imageoptim需要在xcd">
 <meta property="og:image" content="https://flyingnoob.github.io/uploads/app_thining.png">
 <meta property="og:image" content="https://flyingnoob.github.io/uploads/appcode_inspect.png">
-<meta property="og:updated_time" content="2017-08-15T06:50:39.000Z">
+<meta property="og:updated_time" content="2017-08-15T06:54:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS App Thinning 实践">
 <meta name="twitter:description" content="最近接手到app优化的任务，基于前人的文章以及相关资料完成本次任务的同时对整个过程做一个简单的记录，希望对看到的朋友有帮助，也欢迎指出文章中出错的地方，可以随意喷。第一次发文，多多包涵。
@@ -141,9 +139,8 @@ Assets.car
 
 
 
-##资源优化
-1、使用Imageoptim压缩图片
-使用Imageoptim需要在">
+资源优化1、使用Imageoptim压缩图片
+使用Imageoptim需要在xcd">
 <meta name="twitter:image" content="https://flyingnoob.github.io/uploads/app_thining.png">
 
 
@@ -440,8 +437,7 @@ Assets.car
 </li>
 </ul>
 <p><img src="/uploads/app_thining.png" alt=""></p>
-<p>##资源优化</p>
-<p><strong>1、使用Imageoptim压缩图片</strong></p>
+<h2 id="资源优化"><a href="#资源优化" class="headerlink" title="资源优化"></a>资源优化</h2><p><strong>1、使用Imageoptim压缩图片</strong></p>
 <p>使用Imageoptim需要在xcdoe设置compress png files 编译选项为NO，二者不能同时使用。详见<a href="https://imageoptim.com/xcode.html" target="_blank" rel="external">Imageoptim官网说明</a>。</p>
 <p><strong>2、使用工具清理未使用的图片</strong></p>
 <ul>
@@ -453,9 +449,7 @@ Assets.car
 <li>音视频文件</li>
 <li>db、plist、json、readme 等无用文件</li>
 </ul>
-<p>##编译选项优化</p>
-<p>###Optimization Level</p>
-<blockquote>
+<h2 id="编译选项优化"><a href="#编译选项优化" class="headerlink" title="编译选项优化"></a>编译选项优化</h2><h3 id="Optimization-Level"><a href="#Optimization-Level" class="headerlink" title="Optimization Level"></a>Optimization Level</h3><blockquote>
 <p>该选项表示编译器优化代码性能的不同方式。具体表现为项目大小或者编译时间。实现机制为不同程度的减少代码执行需要的loop unrolling（一种牺牲程序的尺寸来加快程序执行速度的优化方法）。优化程度从fast,faster,fastest依次增强。这些选项会给编译器权限去修改代码的结构以便节省编译时间。任何形式的代码优化都会以时间为代价</p>
 </blockquote>
 <p>Release模式设置为Fastest, Smallest [-Os]可以显著的减小编译文件大小，该选项会自动尝试fastest和smallest两种极端优化方法，选择最合适的值。苹果建议只为Release模式设置该选项</p>
@@ -497,22 +491,19 @@ Assets.car
 <blockquote>
 <p>Release 设置为YES Debug 设置为NO,</p>
 </blockquote>
-<p>###Dead Code Stripping</p>
-<p>删除静态链接的可执行文件中未引用的代码</p>
+<h3 id="Dead-Code-Stripping"><a href="#Dead-Code-Stripping" class="headerlink" title="Dead Code Stripping"></a>Dead Code Stripping</h3><p>删除静态链接的可执行文件中未引用的代码</p>
 <blockquote>
 <p>Debug 设置为NO Release 设置为YES 可减少可执行文件大小</p>
 </blockquote>
-<p>###Assert Catalog Compiler<br>optimization 选项设置为 space 可以减少包大小</p>
-<p>###Generate Debug Symbols</p>
-<blockquote>
+<h3 id="Assert-Catalog-Compiler"><a href="#Assert-Catalog-Compiler" class="headerlink" title="Assert Catalog Compiler"></a>Assert Catalog Compiler</h3><p>optimization 选项设置为 space 可以减少包大小</p>
+<h3 id="Generate-Debug-Symbols"><a href="#Generate-Debug-Symbols" class="headerlink" title="Generate Debug Symbols"></a>Generate Debug Symbols</h3><blockquote>
 <p>Enables or disables generation of debug symbols. When debug symbols are enabled, the level of detail can be controlled by the build ‘Level of Debug Symbols’ setting. </p>
 </blockquote>
 <p>调试符号是在编译时生成的。当Generate Debug Symbols选项设置为YES时，打包会生成symbols 文件。设置为NO则ipa中不会生成symbol文件，可以减少ipa 大小</p>
 <blockquote>
 <p>xcode 默认选择为YES,不建议关闭该选项，可能会影响到app调试。</p>
 </blockquote>
-<p>##可执行文件优化</p>
-<p>1、 使用Appcode(code-&gt;inspect code) 代码检测分析功能删除无用类和无用方法。<br><img src="/uploads/appcode_inspect.png" alt=""></p>
+<h2 id="可执行文件优化"><a href="#可执行文件优化" class="headerlink" title="可执行文件优化"></a>可执行文件优化</h2><p>1、 使用Appcode(code-&gt;inspect code) 代码检测分析功能删除无用类和无用方法。<br><img src="/uploads/appcode_inspect.png" alt=""></p>
 <p>2、清理掉功能相似以及非必要的的第三方库</p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>xcode在编译层面很多选项都为我们默认开启。整个优化过程中对包大小影响最主要部分还是在于图片资源和无用类无用方法的清理。所以还是要在开发过程中注意图片资源的使用，当某些代码和类没用的时候及时清理，尽可能的避免冗余业务类和方法保持代码的干净整洁。</p>
 <h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="http://blog.csdn.net/u013030990/article/details/72621380" target="_blank" rel="external">Xcode缩小ipa包大小及symbols设置等</a></p>
@@ -727,7 +718,7 @@ Assets.car
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ipa安装包组成"><span class="nav-number">1.</span> <span class="nav-text">ipa安装包组成</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Enable-bitcode"><span class="nav-number">1.1.</span> <span class="nav-text">Enable bitcode</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Strip-Symbol-Information"><span class="nav-number">1.2.</span> <span class="nav-text">Strip Symbol Information</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">2.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">3.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ipa安装包组成"><span class="nav-number">1.</span> <span class="nav-text">ipa安装包组成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#资源优化"><span class="nav-number">2.</span> <span class="nav-text">资源优化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编译选项优化"><span class="nav-number">3.</span> <span class="nav-text">编译选项优化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Optimization-Level"><span class="nav-number">3.1.</span> <span class="nav-text">Optimization Level</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Enable-bitcode"><span class="nav-number">3.2.</span> <span class="nav-text">Enable bitcode</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Strip-Symbol-Information"><span class="nav-number">3.3.</span> <span class="nav-text">Strip Symbol Information</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dead-Code-Stripping"><span class="nav-number">3.4.</span> <span class="nav-text">Dead Code Stripping</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Assert-Catalog-Compiler"><span class="nav-number">3.5.</span> <span class="nav-text">Assert Catalog Compiler</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-Debug-Symbols"><span class="nav-number">3.6.</span> <span class="nav-text">Generate Debug Symbols</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#可执行文件优化"><span class="nav-number">4.</span> <span class="nav-text">可执行文件优化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">6.</span> <span class="nav-text">Reference</span></a></li></ol></div>
             
 
           </div>
