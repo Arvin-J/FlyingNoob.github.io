@@ -1,15 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 
 
 
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
 
 
 
@@ -68,7 +75,7 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -80,7 +87,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
 
 
 
@@ -101,9 +108,10 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    scheme: 'Gemini',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
+    tabs: true,
     motion: true,
     duoshuo: {
       userId: '0',
@@ -127,38 +135,26 @@
 
 
 
-  <title>
+  <title>Andriod | 会跳舞的猴子</title>
   
 
-  
-    Andriod | 会跳舞的猴子
-  
-</title>
+
+
+
+
+
+
+
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -205,7 +201,7 @@
         <li class="menu-item menu-item-c">
           <a href="/categories/C" rel="section">
             
-            C
+            menu.C
           </a>
         </li>
       
@@ -213,7 +209,7 @@
         <li class="menu-item menu-item-ios">
           <a href="/categories/iOS" rel="section">
             
-            iOS
+            menu.iOS
           </a>
         </li>
       
@@ -221,7 +217,7 @@
         <li class="menu-item menu-item-andriod">
           <a href="/categories/Andriod" rel="section">
             
-            Andriod
+            menu.Andriod
           </a>
         </li>
       
@@ -229,7 +225,7 @@
         <li class="menu-item menu-item-javascript">
           <a href="/categories/JavaScript" rel="section">
             
-            JavaScript
+            menu.JavaScript
           </a>
         </li>
       
@@ -237,7 +233,7 @@
         <li class="menu-item menu-item-html&css">
           <a href="/categories/HTML-CSS" rel="section">
             
-            HTML&CSS
+            menu.HTML&CSS
           </a>
         </li>
       
@@ -245,7 +241,7 @@
         <li class="menu-item menu-item-数据结构与算法">
           <a href="/categories/数据结构与算法/" rel="section">
             
-            数据结构与算法
+            menu.数据结构与算法
           </a>
         </li>
       
@@ -269,7 +265,11 @@
             
 
   <div id="posts" class="posts-expand">
-  <header class="post-header">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
 
 	<h1 class="post-title" itemprop="name headline">Andriod</h1>
 
@@ -277,20 +277,32 @@
 
 </header>
 
-    
-    
-      <div class="category-all-page">
-        <div class="category-all-title">
-            目前共计 1 个分类
-        </div>
-        <div class="category-all">
-          <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/iOS/">iOS</a><span class="category-list-count">2</span></li></ul>
-        </div>
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <div class="category-all-page">
+            <div class="category-all-title">
+                目前共计 1 个分类
+            </div>
+            <div class="category-all">
+              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/iOS/">iOS</a><span class="category-list-count">2</span></li></ul>
+            </div>
+          </div>
+        
       </div>
+      
+      
+      
+    </div>
+    
+    
     
   </div>
 
-          
+
           </div>
           
 
@@ -301,7 +313,7 @@
       <div id="disqus_thread">
         <noscript>
           Please enable JavaScript to view the
-          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
         </noscript>
       </div>
     
@@ -321,6 +333,7 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
@@ -330,7 +343,7 @@
       <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.png"
+               src="/images/avatar.gif"
                alt="会跳舞的猴子" />
           <p class="site-author-name" itemprop="name">会跳舞的猴子</p>
            
@@ -373,7 +386,9 @@
                   
                     <i class="fa fa-fw fa-github"></i>
                   
-                  GitHub
+                    
+                      GitHub
+                    
                 </a>
               </span>
             
@@ -382,7 +397,9 @@
                   
                     <i class="fa fa-fw fa-globe"></i>
                   
-                  微博
+                    
+                      微博
+                    
                 </a>
               </span>
             
@@ -422,22 +439,32 @@
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">会跳舞的猴子</span>
+
+  
 </div>
 
 
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
+  <div class="powered-by">
+    由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+  </div>
 
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
-</div>
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">
+    主题 &mdash;
+    <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+      NexT.Gemini
+    </a>
+  </div>
 
 
         
+
+
+
+
+
+
 
         
       </div>
@@ -449,7 +476,7 @@
         
       </div>
     
-    
+
   </div>
 
   
@@ -469,6 +496,14 @@
 
 
   
+
+
+
+
+
+
+
+
 
 
 
@@ -495,57 +530,69 @@
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
 
 
 
   
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
 
 
 
   
 
-    <script type="text/javascript">
-      var disqus_shortname = 'flyingnoob';
-      var disqus_identifier = 'Andriod/index.html';
 
-      var disqus_title = "Andriod";
+  
 
+    
+      <script id="dsq-count-scr" src="https://flyingnoob.disqus.com/count.js" async></script>
+    
 
-      function run_disqus_script(disqus_script) {
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      }
-
-      run_disqus_script('count.js');
-
-      
+    
+      <script type="text/javascript">
         var disqus_config = function () {
-            this.page.url = disqus_url;
-            this.page.identifier = disqus_identifier;
-            this.page.title = disqus_title;
+          this.page.url = 'https://flyingnoob.github.io/Andriod/index.html';
+          this.page.identifier = 'Andriod/index.html';
+          this.page.title = 'Andriod';
         };
-        run_disqus_script('embed.js');
-      
+        var d = document, s = d.createElement('script');
+        s.src = 'https://flyingnoob.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
 
-    </script>
+  
+
+
+
+
+	
+
+
+
+
+
   
 
 
@@ -558,18 +605,20 @@
 
 
   
-  
-
-  
-  
 
 
-  
+
+
 
   
 
   
 
+  
+
+  
+
+  
 
   
 
