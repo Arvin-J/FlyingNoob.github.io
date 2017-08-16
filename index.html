@@ -1,22 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 
 
 
   
 
 
-<html class="theme-next gemini use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
 
 
 
@@ -75,7 +68,7 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -87,7 +80,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
 
 
 
@@ -107,10 +100,9 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
-    tabs: true,
     motion: true,
     duoshuo: {
       userId: '0',
@@ -134,7 +126,11 @@
 
 
 
-  <title>会跳舞的猴子</title>
+  <title> 会跳舞的猴子 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
   
 
 
@@ -144,16 +140,18 @@
 
 
 
-</head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+
+
+
 
   
   
     
   
 
-  <div class="container sidebar-position-left 
+  <div class="container one-collumn sidebar-position-left 
    page-home 
  ">
     <div class="headband"></div>
@@ -202,7 +200,7 @@
         <li class="menu-item menu-item-c">
           <a href="/categories/C" rel="section">
             
-            menu.C
+            C
           </a>
         </li>
       
@@ -210,7 +208,7 @@
         <li class="menu-item menu-item-ios">
           <a href="/categories/iOS" rel="section">
             
-            menu.iOS
+            iOS
           </a>
         </li>
       
@@ -218,7 +216,7 @@
         <li class="menu-item menu-item-andriod">
           <a href="/categories/Andriod" rel="section">
             
-            menu.Andriod
+            Andriod
           </a>
         </li>
       
@@ -226,7 +224,7 @@
         <li class="menu-item menu-item-javascript">
           <a href="/categories/JavaScript" rel="section">
             
-            menu.JavaScript
+            JavaScript
           </a>
         </li>
       
@@ -234,7 +232,7 @@
         <li class="menu-item menu-item-html&css">
           <a href="/categories/HTML-CSS" rel="section">
             
-            menu.HTML&CSS
+            HTML&CSS
           </a>
         </li>
       
@@ -242,7 +240,7 @@
         <li class="menu-item menu-item-数据结构与算法">
           <a href="/categories/数据结构与算法/" rel="section">
             
-            menu.数据结构与算法
+            数据结构与算法
           </a>
         </li>
       
@@ -274,17 +272,13 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="https://flyingnoob.github.io/2017/08/15/iOS App Launch Time优化实践/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="会跳舞的猴子">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -297,8 +291,16 @@
         
         
           <h1 class="post-title" itemprop="name headline">
+            
+            
+              
                 
-                <a class="post-title-link" href="/2017/08/15/iOS App Launch Time优化实践/" itemprop="url">iOS Launch Time 优化实践</a></h1>
+                <a class="post-title-link" href="/2017/08/15/iOS App Launch Time优化实践/" itemprop="url">
+                  iOS Launch Time 优化实践
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
@@ -352,8 +354,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/08/15/iOS App Launch Time优化实践/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/08/15/iOS App Launch Time优化实践/" itemprop="commentCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/08/15/iOS App Launch Time优化实践/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -372,9 +373,7 @@
       </header>
     
 
-    
-    
-    
+
     <div class="post-body" itemprop="articleBody">
 
       
@@ -383,20 +382,27 @@
       
         
           
-            
           
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/15/iOS App Launch Time优化实践/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
 
     <footer class="post-footer">
       
@@ -410,10 +416,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -426,17 +428,13 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="https://flyingnoob.github.io/2017/08/14/iOS App Thinning 实践/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="会跳舞的猴子">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -449,8 +447,16 @@
         
         
           <h1 class="post-title" itemprop="name headline">
+            
+            
+              
                 
-                <a class="post-title-link" href="/2017/08/14/iOS App Thinning 实践/" itemprop="url">iOS App Thinning 实践</a></h1>
+                <a class="post-title-link" href="/2017/08/14/iOS App Thinning 实践/" itemprop="url">
+                  iOS App Thinning 实践
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
@@ -504,8 +510,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/08/14/iOS App Thinning 实践/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/08/14/iOS App Thinning 实践/" itemprop="commentCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/08/14/iOS App Thinning 实践/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -524,9 +529,7 @@
       </header>
     
 
-    
-    
-    
+
     <div class="post-body" itemprop="articleBody">
 
       
@@ -535,106 +538,45 @@
       
         
           
-            <p>最近接手到app优化的任务，基于前人的文章以及相关资料完成本次任务的同时对整个过程做一个简单的记录，希望对看到的朋友有帮助，也欢迎指出文章中出错的地方，可以随意喷。第一次发文，多多包涵。</p>
-<h2 id="ipa安装包组成"><a href="#ipa安装包组成" class="headerlink" title="ipa安装包组成"></a>ipa安装包组成</h2><ul>
-<li>Symbols</li>
-<li>Payload<ul>
-<li>nib</li>
-<li>app二进制文件</li>
-<li>bundle</li>
-<li>Assets.car</li>
-<li>其他文件</li>
-</ul>
-</li>
-</ul>
-<p><img src="/uploads/app_thining.png" alt=""></p>
-<h2 id="资源优化"><a href="#资源优化" class="headerlink" title="资源优化"></a>资源优化</h2><p><strong>1、使用Imageoptim压缩图片</strong></p>
-<p>使用Imageoptim需要在xcdoe设置compress png files 编译选项为NO，二者不能同时使用。详见<a href="https://imageoptim.com/xcode.html" target="_blank" rel="external">Imageoptim官网说明</a>。</p>
-<p><strong>2、使用工具清理未使用的图片</strong></p>
-<ul>
-<li><a href="https://github.com/tinymind/LSUnusedResources" target="_blank" rel="external">LSUnusedResources</a></li>
-<li><a href="https://github.com/onevcat/FengNiao" target="_blank" rel="external">FengNiao</a></li>
-</ul>
-<p><strong>3、 删除其他无用资源文件</strong></p>
-<ul>
-<li>音视频文件</li>
-<li>db、plist、json、readme 等无用文件</li>
-</ul>
-<h2 id="编译选项优化"><a href="#编译选项优化" class="headerlink" title="编译选项优化"></a>编译选项优化</h2><h3 id="Optimization-Level"><a href="#Optimization-Level" class="headerlink" title="Optimization Level"></a>Optimization Level</h3><blockquote>
-<p>该选项表示编译器优化代码性能的不同方式。具体表现为项目大小或者编译时间。实现机制为不同程度的减少代码执行需要的loop unrolling（一种牺牲程序的尺寸来加快程序执行速度的优化方法）。优化程度从fast,faster,fastest依次增强。这些选项会给编译器权限去修改代码的结构以便节省编译时间。任何形式的代码优化都会以时间为代价</p>
-</blockquote>
-<p>Release模式设置为Fastest, Smallest [-Os]可以显著的减小编译文件大小，该选项会自动尝试fastest和smallest两种极端优化方法，选择最合适的值。苹果建议只为Release模式设置该选项</p>
-<p>Optimization Leveal各个选项的意义</p>
-<table>
-<thead>
-<tr>
-<th>Xcode Setting</th>
-<th>Describtion</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td> None</td>
-<td>The compiler does not attempt to optimize code. Use this option during development when you are focused on solving logic errors and need a fast compile time. Do not use this option for shipping your executable.（编译器不进行任何代码优化）</td>
-</tr>
-<tr>
-<td> Fast</td>
-<td>The compiler performs simple optimizations to boost code performance while minimizing the impact to compile time. This option also uses more memory during compilation（编译器进行小幅度代码优化，同时消耗更多的内存）</td>
-</tr>
-<tr>
-<td> Faster</td>
-<td>The compiler performs nearly all supported optimizations that do not require a space-time tradeoff. The compiler does not perform loop unrolling or function inlining with this option. This option increases both compilation time and the performance of generated code.（该选项会进行所有可用的优化选项而不用花费额外的时间和内存。该选项不会执行循环展开或者内嵌函数。该选项会在提升代码性能的同时增加编译时间）</td>
-</tr>
-<tr>
-<td> Fastest</td>
-<td>The compiler performs all optimizations in an attempt to improve the speed of the generated code. This option can increase the size of generated code as the compiler performs aggressive inlining of functions.This option is generally not recommended.（该选项会作出尽可能多的尝试来提高编译性能。但同时会和内嵌函数机制存在冲突。一般不建议使用该选项）</td>
-</tr>
-<tr>
-<td> Fastest,Smallest</td>
-<td>The compiler performs all optimizations that do not typically increase code size. This is the preferred option for shipping code because it gives your executable a smaller memory footprint.（编译器会进行所有可用的优化而不显著的增加运行空间。该选项是打包代码的最优选项）</td>
-</tr>
-</tbody>
-</table>
-<h3 id="Enable-bitcode"><a href="#Enable-bitcode" class="headerlink" title="Enable bitcode"></a>Enable bitcode</h3><p>设置为YES（项目中所有的库都必须支持bitcode）</p>
-<p>Bitcode为LLVM编译器的中间代码的一种编码，LLVM的编译原理是前端负责把项目代码翻译成Bitcode中间码，然后再根据不同目标机器芯片平台转换为相应的汇编指令以及翻译机器码。使用Bitcode的不便之处是无法还原崩溃现场找到原因。</p>
-<h3 id="Strip-Symbol-Information"><a href="#Strip-Symbol-Information" class="headerlink" title="Strip Symbol Information"></a>Strip Symbol Information</h3><p>1、Deployment Postprocessing<br>2、Strip Linked Product<br>3、Strip Debug Symbols During Copy<br>4、Symbols hidden by default</p>
-<p>设置为YES可以去掉不必要的符号信息，可以减少可执行文件大小。</p>
-<blockquote>
-<p>Release 设置为YES Debug 设置为NO,</p>
-</blockquote>
-<h3 id="Dead-Code-Stripping"><a href="#Dead-Code-Stripping" class="headerlink" title="Dead Code Stripping"></a>Dead Code Stripping</h3><p>删除静态链接的可执行文件中未引用的代码</p>
-<blockquote>
-<p>Debug 设置为NO Release 设置为YES 可减少可执行文件大小</p>
-</blockquote>
-<h3 id="Assert-Catalog-Compiler"><a href="#Assert-Catalog-Compiler" class="headerlink" title="Assert Catalog Compiler"></a>Assert Catalog Compiler</h3><p>optimization 选项设置为 space 可以减少包大小</p>
-<h3 id="Generate-Debug-Symbols"><a href="#Generate-Debug-Symbols" class="headerlink" title="Generate Debug Symbols"></a>Generate Debug Symbols</h3><blockquote>
-<p>Enables or disables generation of debug symbols. When debug symbols are enabled, the level of detail can be controlled by the build ‘Level of Debug Symbols’ setting. </p>
-</blockquote>
-<p>调试符号是在编译时生成的。当Generate Debug Symbols选项设置为YES时，打包会生成symbols 文件。设置为NO则ipa中不会生成symbol文件，可以减少ipa 大小</p>
-<blockquote>
-<p>xcode 默认选择为YES,不建议关闭该选项，可能会影响到app调试。</p>
-</blockquote>
-<h2 id="可执行文件优化"><a href="#可执行文件优化" class="headerlink" title="可执行文件优化"></a>可执行文件优化</h2><p>1、 使用Appcode(code-&gt;inspect code) 代码检测分析功能删除无用类和无用方法。<br><img src="/uploads/appcode_inspect.png" alt=""></p>
-<p>2、清理掉功能相似以及非必要的的第三方库</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>xcode在编译层面很多选项都为我们默认开启。整个优化过程中对包大小影响最主要部分还是在于图片资源和无用类无用方法的清理。所以还是要在开发过程中注意图片资源的使用，当某些代码和类没用的时候及时清理，尽可能的避免冗余业务类和方法保持代码的干净整洁。</p>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="http://blog.csdn.net/u013030990/article/details/72621380" target="_blank" rel="external">Xcode缩小ipa包大小及symbols设置等</a></p>
-<p><a href="https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/AppThinning/AppThinning.html" target="_blank" rel="external">App Thinning (iOS.tvOS,wtchOS)</a></p>
-<p><a href="(https://developer.apple.com/legacy/library/documentation/DeveloperTools/Reference/XcodeBuildSettingRef/1-Build_Setting_Reference/build_setting_ref.html#//apple_ref/doc/uid/TP40003931-CH3-SW96">Build Setting Reference</a>)</p>
-<p><a href="https://developer.apple.com/library/content/documentation/General/Conceptual/MOSXAppProgrammingGuide/Performance/Performance.html#//apple_ref/doc/uid/TP40010543-CH9-SW12" target="_blank" rel="external">Tuning for Performance and Responsiveness</a></p>
+          最近接手到app优化的任务，基于前人的文章以及相关资料完成本次任务的同时对整个过程做一个简单的记录，希望对看到的朋友有帮助，也欢迎指出文章中出错的地方，可以随意喷。第一次发文，多多包涵。
+ipa安装包组成
+Symbols
+Payload
+nib
+app二进制文件
+bundle
+Assets.car
+其他文件
 
-          
+
+
+
+资源优化1、使用Imageoptim压缩图片
+使用Imageoptim需要在xcdoe设置compress png files 编译选项为NO，二者不能同时使用。详见Imageoptim官网说明。
+2、使用工具清理未使用的图片
+
+LSUnusedResources
+FengNiao
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/14/iOS App Thinning 实践/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
 
     <footer class="post-footer">
       
@@ -648,10 +590,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -664,17 +602,13 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="https://flyingnoob.github.io/2017/03/07/深入理解iOS内存管理/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="会跳舞的猴子">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -687,8 +621,16 @@
         
         
           <h1 class="post-title" itemprop="name headline">
+            
+            
+              
                 
-                <a class="post-title-link" href="/2017/03/07/深入理解iOS内存管理/" itemprop="url">深入理解iOS内存管理</a></h1>
+                <a class="post-title-link" href="/2017/03/07/深入理解iOS内存管理/" itemprop="url">
+                  深入理解iOS内存管理
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
@@ -720,8 +662,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/03/07/深入理解iOS内存管理/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/03/07/深入理解iOS内存管理/" itemprop="commentCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/07/深入理解iOS内存管理/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -740,9 +681,7 @@
       </header>
     
 
-    
-    
-    
+
     <div class="post-body" itemprop="articleBody">
 
       
@@ -751,20 +690,27 @@
       
         
           
-            
           
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/07/深入理解iOS内存管理/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
+    <div>
+      
+    </div>
 
-    
 
     <footer class="post-footer">
       
@@ -778,10 +724,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -790,7 +732,7 @@
 
   
 
-
+          
           </div>
           
 
@@ -810,7 +752,6 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
-    
     <div class="sidebar-inner">
 
       
@@ -820,7 +761,7 @@
       <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
+               src="/images/avatar.png"
                alt="会跳舞的猴子" />
           <p class="site-author-name" itemprop="name">会跳舞的猴子</p>
            
@@ -863,9 +804,7 @@
                   
                     <i class="fa fa-fw fa-github"></i>
                   
-                    
-                      GitHub
-                    
+                  GitHub
                 </a>
               </span>
             
@@ -874,9 +813,7 @@
                   
                     <i class="fa fa-fw fa-globe"></i>
                   
-                    
-                      微博
-                    
+                  微博
                 </a>
               </span>
             
@@ -916,32 +853,22 @@
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">会跳舞的猴子</span>
-
-  
 </div>
 
 
-  <div class="powered-by">
-    由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-  </div>
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
 
-  <span class="post-meta-divider">|</span>
-
-  <div class="theme-info">
-    主题 &mdash;
-    <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-      NexT.Gemini
-    </a>
-  </div>
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
 
 
         
-
-
-
-
-
-
 
         
       </div>
@@ -953,7 +880,7 @@
         
       </div>
     
-
+    
   </div>
 
   
@@ -973,14 +900,6 @@
 
 
   
-
-
-
-
-
-
-
-
 
 
 
@@ -1007,57 +926,48 @@
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
 
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+  
 
   
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
 
 
 
   
 
-
   
-
     
-      <script id="dsq-count-scr" src="https://flyingnoob.disqus.com/count.js" async></script>
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"flyingnoob"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
     
-
     
-
-  
-
-
-
-
-	
-
-
-
-
-
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
   
 
 
@@ -1069,13 +979,35 @@
 
 
 
-  
-
-
 
 
 
   
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
@@ -1083,7 +1015,6 @@
 
   
 
-  
 
   
 
